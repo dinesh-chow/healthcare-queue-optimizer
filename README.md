@@ -74,7 +74,8 @@ healthcare-queue-optimizer/
     P002,32,85,120,80,0,"mild headache and nausea"
 
 
-#** WEBSITE LINK : https://dinesh-chow-q-optimizer-2285.streamlit.app/
+#** TOOL LINK : https://dinesh-chow-q-optimizer-2285.streamlit.app/   **#
+
 
 MIT License
 
