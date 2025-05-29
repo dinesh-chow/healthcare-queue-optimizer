@@ -1,0 +1,501 @@
+patient_id,age,heart_rate,systolic_bp,diastolic_bp,history_diabetes,symptom_text,urgency_label
+1,71,64,161,80,0,mild headache and fatigue,medium
+2,43,52,111,112,1,chest pain and dizziness,low
+3,49,87,91,119,0,abdominal pain and nausea,low
+4,77,71,178,108,0,shortness of breath,medium
+5,61,109,169,74,0,shortness of breath,medium
+6,66,111,140,103,0,cough and sore throat,medium
+7,83,52,140,66,0,mild headache and fatigue,low
+8,58,67,93,84,1,severe back pain,low
+9,28,102,91,79,0,mild headache and fatigue,medium
+10,79,93,97,106,0,vomiting and diarrhea,low
+11,55,99,93,61,0,joint pain and swelling,low
+12,73,53,143,88,1,chest pain and dizziness,high
+13,63,83,163,95,0,chest pain and dizziness,medium
+14,67,64,161,73,0,mild headache and fatigue,medium
+15,81,89,174,75,0,shortness of breath,medium
+16,72,73,115,84,0,shortness of breath,low
+17,60,78,104,104,0,severe back pain,low
+18,28,50,97,83,0,vomiting and diarrhea,low
+19,27,84,124,92,0,chest pain and dizziness,low
+20,60,77,96,68,0,severe back pain,low
+21,53,82,137,114,0,shortness of breath,low
+22,56,93,175,86,0,severe back pain,medium
+23,66,52,90,64,0,joint pain and swelling,low
+24,33,76,98,74,0,shortness of breath,low
+25,61,100,152,91,0,blurred vision,medium
+26,71,53,112,98,0,vomiting and diarrhea,low
+27,62,78,125,72,0,abdominal pain and nausea,low
+28,78,77,155,101,0,chest pain and dizziness,high
+29,76,55,117,87,0,cough and sore throat,low
+30,49,111,164,117,0,joint pain and swelling,medium
+31,81,50,116,116,0,fever and chills,low
+32,22,119,161,86,0,abdominal pain and nausea,medium
+33,56,100,133,83,1,cough and sore throat,low
+34,51,101,151,108,0,shortness of breath,medium
+35,31,88,91,62,0,fever and chills,low
+36,75,108,91,61,0,mild headache and fatigue,medium
+37,20,68,91,112,0,mild headache and fatigue,low
+38,51,119,121,114,0,joint pain and swelling,medium
+39,75,66,127,83,0,mild headache and fatigue,low
+40,89,60,105,92,0,fever and chills,low
+41,78,119,169,88,1,fever and chills,medium
+42,78,85,108,85,0,vomiting and diarrhea,low
+43,38,69,160,111,1,abdominal pain and nausea,medium
+44,59,88,171,99,0,chest pain and dizziness,medium
+45,76,99,112,90,1,blurred vision,low
+46,26,65,179,107,0,severe back pain,medium
+47,79,51,90,107,1,mild headache and fatigue,low
+48,88,86,121,118,0,joint pain and swelling,low
+49,38,97,169,62,1,mild headache and fatigue,medium
+50,73,82,113,111,0,severe back pain,low
+51,55,87,173,94,0,abdominal pain and nausea,medium
+52,44,67,171,61,0,vomiting and diarrhea,medium
+53,80,90,122,63,0,fever and chills,low
+54,40,97,109,115,0,vomiting and diarrhea,low
+55,26,116,106,92,0,shortness of breath,medium
+56,78,71,119,97,1,mild headache and fatigue,low
+57,70,103,97,86,0,chest pain and dizziness,high
+58,40,79,117,106,0,shortness of breath,low
+59,88,110,137,78,0,abdominal pain and nausea,medium
+60,83,98,106,103,1,mild headache and fatigue,low
+61,65,55,126,83,0,shortness of breath,low
+62,65,102,149,92,0,mild headache and fatigue,medium
+63,51,82,156,77,0,joint pain and swelling,medium
+64,73,107,156,99,0,abdominal pain and nausea,medium
+65,51,96,175,82,0,blurred vision,medium
+66,46,51,179,76,0,fever and chills,medium
+67,28,92,137,98,0,cough and sore throat,low
+68,45,99,114,83,1,fever and chills,low
+69,26,106,125,104,0,fever and chills,medium
+70,27,65,103,71,1,shortness of breath,low
+71,34,115,121,82,0,abdominal pain and nausea,medium
+72,70,74,147,81,0,mild headache and fatigue,medium
+73,68,101,131,65,0,vomiting and diarrhea,medium
+74,79,57,142,119,0,cough and sore throat,medium
+75,24,117,95,104,0,severe back pain,medium
+76,66,104,129,111,0,shortness of breath,medium
+77,49,68,106,115,0,cough and sore throat,low
+78,77,104,179,96,0,blurred vision,medium
+79,81,72,98,71,0,joint pain and swelling,low
+80,77,50,123,91,0,abdominal pain and nausea,low
+81,67,50,105,98,0,severe back pain,low
+82,88,71,156,71,0,shortness of breath,medium
+83,70,106,118,73,0,fever and chills,medium
+84,66,111,158,71,0,chest pain and dizziness,high
+85,67,88,122,89,0,shortness of breath,low
+86,29,118,123,111,0,chest pain and dizziness,medium
+87,38,107,90,115,0,fever and chills,medium
+88,23,65,113,75,0,joint pain and swelling,low
+89,51,73,101,109,0,abdominal pain and nausea,low
+90,52,82,150,110,0,mild headache and fatigue,medium
+91,31,116,154,92,0,shortness of breath,medium
+92,62,93,118,72,0,vomiting and diarrhea,low
+93,65,51,124,82,0,fever and chills,low
+94,27,75,163,85,0,shortness of breath,medium
+95,26,117,147,112,0,blurred vision,medium
+96,48,85,178,80,1,joint pain and swelling,medium
+97,55,59,162,83,0,blurred vision,medium
+98,68,85,171,108,0,cough and sore throat,medium
+99,43,72,151,91,1,abdominal pain and nausea,medium
+100,74,62,112,84,0,cough and sore throat,low
+101,49,66,151,79,0,shortness of breath,medium
+102,32,108,108,108,0,severe back pain,medium
+103,80,68,165,68,0,severe back pain,medium
+104,71,65,158,94,0,abdominal pain and nausea,medium
+105,71,102,112,75,0,vomiting and diarrhea,medium
+106,72,91,147,98,1,joint pain and swelling,medium
+107,24,84,176,88,0,vomiting and diarrhea,medium
+108,37,58,163,117,0,joint pain and swelling,medium
+109,26,95,102,99,0,fever and chills,low
+110,69,76,155,64,0,shortness of breath,medium
+111,57,57,154,81,0,cough and sore throat,medium
+112,64,53,125,65,0,severe back pain,low
+113,38,110,143,98,0,blurred vision,medium
+114,38,88,156,104,0,mild headache and fatigue,medium
+115,77,69,161,100,0,chest pain and dizziness,high
+116,22,111,152,119,0,mild headache and fatigue,medium
+117,75,82,127,112,1,cough and sore throat,low
+118,63,94,121,104,0,cough and sore throat,low
+119,40,85,108,79,0,joint pain and swelling,low
+120,66,98,103,74,0,vomiting and diarrhea,low
+121,73,52,105,82,0,mild headache and fatigue,low
+122,31,65,161,97,0,joint pain and swelling,medium
+123,47,57,125,85,0,joint pain and swelling,low
+124,79,99,117,87,0,vomiting and diarrhea,low
+125,83,76,152,76,0,blurred vision,medium
+126,48,62,135,94,0,severe back pain,low
+127,88,96,114,61,0,abdominal pain and nausea,low
+128,49,54,122,113,0,severe back pain,low
+129,68,60,174,85,0,chest pain and dizziness,high
+130,78,76,138,72,0,mild headache and fatigue,low
+131,20,70,144,65,0,severe back pain,medium
+132,88,54,92,112,0,abdominal pain and nausea,low
+133,72,86,163,69,0,fever and chills,medium
+134,20,100,134,72,0,mild headache and fatigue,low
+135,84,81,123,87,0,abdominal pain and nausea,low
+136,58,75,123,113,0,joint pain and swelling,low
+137,69,61,154,113,1,cough and sore throat,medium
+138,76,66,136,82,0,blurred vision,low
+139,33,115,164,110,1,chest pain and dizziness,medium
+140,83,87,139,93,0,abdominal pain and nausea,low
+141,70,112,141,116,0,severe back pain,medium
+142,49,100,170,64,0,cough and sore throat,medium
+143,29,105,106,69,0,severe back pain,medium
+144,88,83,95,112,0,mild headache and fatigue,low
+145,62,72,144,75,0,abdominal pain and nausea,medium
+146,35,57,93,99,0,severe back pain,low
+147,44,116,156,86,0,vomiting and diarrhea,medium
+148,69,110,140,78,0,shortness of breath,medium
+149,61,110,111,80,0,cough and sore throat,medium
+150,24,61,179,105,0,fever and chills,medium
+151,64,76,162,85,0,cough and sore throat,medium
+152,75,112,137,76,0,severe back pain,medium
+153,20,57,141,74,0,severe back pain,medium
+154,75,63,179,87,0,chest pain and dizziness,high
+155,21,75,103,118,0,vomiting and diarrhea,low
+156,26,52,112,105,0,fever and chills,low
+157,37,87,104,84,0,blurred vision,low
+158,47,88,146,76,0,chest pain and dizziness,medium
+159,63,74,106,72,0,mild headache and fatigue,low
+160,87,59,156,100,0,fever and chills,medium
+161,53,57,129,108,0,abdominal pain and nausea,low
+162,61,90,95,111,0,shortness of breath,low
+163,78,105,148,104,0,chest pain and dizziness,high
+164,52,102,111,80,0,shortness of breath,medium
+165,23,111,151,89,0,vomiting and diarrhea,medium
+166,74,58,92,110,0,mild headache and fatigue,low
+167,55,73,95,61,0,mild headache and fatigue,low
+168,23,55,140,116,0,blurred vision,low
+169,27,75,140,104,0,mild headache and fatigue,low
+170,89,75,157,78,0,severe back pain,medium
+171,39,61,136,60,0,cough and sore throat,low
+172,83,87,126,70,1,cough and sore throat,low
+173,22,82,95,109,0,blurred vision,low
+174,24,72,99,103,0,severe back pain,low
+175,59,51,173,60,0,cough and sore throat,medium
+176,36,58,164,74,0,abdominal pain and nausea,medium
+177,54,98,158,119,1,severe back pain,medium
+178,28,83,165,94,0,vomiting and diarrhea,medium
+179,59,113,111,119,0,joint pain and swelling,medium
+180,30,63,149,89,0,shortness of breath,medium
+181,56,54,172,118,0,severe back pain,medium
+182,81,53,178,104,0,shortness of breath,medium
+183,37,89,161,98,0,abdominal pain and nausea,medium
+184,51,100,127,92,0,joint pain and swelling,low
+185,34,74,106,92,0,fever and chills,low
+186,85,102,140,98,0,blurred vision,medium
+187,25,116,96,110,0,severe back pain,medium
+188,83,64,118,92,0,blurred vision,low
+189,46,85,118,97,0,mild headache and fatigue,low
+190,46,104,122,63,0,shortness of breath,medium
+191,29,54,163,92,0,shortness of breath,medium
+192,32,80,136,95,0,mild headache and fatigue,low
+193,71,105,104,88,0,fever and chills,medium
+194,48,96,157,71,0,chest pain and dizziness,medium
+195,46,85,125,85,0,vomiting and diarrhea,low
+196,88,69,100,69,0,severe back pain,low
+197,25,72,136,85,1,shortness of breath,low
+198,31,62,151,77,0,vomiting and diarrhea,medium
+199,79,92,165,103,0,shortness of breath,medium
+200,87,54,126,67,0,chest pain and dizziness,high
+201,50,58,140,88,0,mild headache and fatigue,low
+202,60,60,112,60,0,chest pain and dizziness,low
+203,40,85,143,82,1,shortness of breath,medium
+204,82,103,144,110,0,mild headache and fatigue,medium
+205,40,96,162,112,0,chest pain and dizziness,medium
+206,71,106,115,100,0,fever and chills,medium
+207,44,87,91,66,0,mild headache and fatigue,low
+208,53,66,132,118,0,severe back pain,low
+209,70,103,113,84,0,shortness of breath,medium
+210,89,82,138,88,0,abdominal pain and nausea,low
+211,41,75,117,109,0,blurred vision,low
+212,68,69,175,87,0,shortness of breath,medium
+213,68,50,102,89,0,severe back pain,low
+214,75,111,121,89,0,cough and sore throat,medium
+215,64,79,105,99,0,vomiting and diarrhea,low
+216,20,96,155,113,0,vomiting and diarrhea,medium
+217,57,100,152,63,0,blurred vision,medium
+218,48,104,92,91,0,shortness of breath,medium
+219,53,104,121,109,1,blurred vision,medium
+220,27,114,146,114,0,joint pain and swelling,medium
+221,78,103,156,110,0,shortness of breath,medium
+222,27,83,124,91,1,mild headache and fatigue,low
+223,51,95,105,63,1,mild headache and fatigue,low
+224,73,63,144,107,0,joint pain and swelling,medium
+225,26,82,112,80,0,fever and chills,low
+226,38,85,118,119,0,joint pain and swelling,low
+227,20,96,158,79,0,joint pain and swelling,medium
+228,21,116,176,114,0,blurred vision,medium
+229,24,86,127,89,0,chest pain and dizziness,low
+230,72,93,175,103,0,mild headache and fatigue,medium
+231,49,108,176,91,0,chest pain and dizziness,medium
+232,33,58,129,61,0,joint pain and swelling,low
+233,41,53,115,117,1,fever and chills,low
+234,56,119,107,80,0,mild headache and fatigue,medium
+235,60,87,123,76,0,shortness of breath,low
+236,46,106,120,65,0,shortness of breath,medium
+237,31,102,160,69,1,shortness of breath,medium
+238,45,111,135,61,0,severe back pain,medium
+239,84,100,142,95,0,blurred vision,medium
+240,48,70,100,99,0,cough and sore throat,low
+241,55,108,128,99,0,joint pain and swelling,medium
+242,74,73,111,64,0,cough and sore throat,low
+243,55,69,172,94,0,abdominal pain and nausea,medium
+244,81,75,155,112,0,blurred vision,medium
+245,59,66,90,84,0,shortness of breath,low
+246,61,74,128,94,0,mild headache and fatigue,low
+247,63,100,101,78,0,blurred vision,low
+248,78,98,150,76,1,severe back pain,medium
+249,74,96,101,75,1,mild headache and fatigue,low
+250,27,70,170,82,0,chest pain and dizziness,medium
+251,89,74,171,84,0,severe back pain,medium
+252,78,75,115,106,0,chest pain and dizziness,high
+253,35,66,112,85,0,mild headache and fatigue,low
+254,26,63,168,112,0,shortness of breath,medium
+255,67,108,176,88,0,cough and sore throat,medium
+256,58,67,148,101,0,joint pain and swelling,medium
+257,33,80,113,94,0,blurred vision,low
+258,64,52,126,102,0,blurred vision,low
+259,74,88,104,115,0,shortness of breath,low
+260,44,62,171,92,1,joint pain and swelling,medium
+261,61,115,144,94,1,chest pain and dizziness,medium
+262,49,62,102,77,1,cough and sore throat,low
+263,58,95,118,108,0,joint pain and swelling,low
+264,76,65,145,103,1,chest pain and dizziness,high
+265,29,79,114,98,0,joint pain and swelling,low
+266,84,98,92,104,0,abdominal pain and nausea,low
+267,49,117,107,96,0,blurred vision,medium
+268,84,102,168,68,0,abdominal pain and nausea,medium
+269,87,61,148,117,0,joint pain and swelling,medium
+270,62,119,128,115,1,severe back pain,medium
+271,30,111,166,93,0,blurred vision,medium
+272,71,53,148,67,1,cough and sore throat,medium
+273,82,103,163,102,0,shortness of breath,medium
+274,60,52,95,64,0,abdominal pain and nausea,low
+275,66,98,98,94,0,shortness of breath,low
+276,80,84,139,77,0,chest pain and dizziness,high
+277,22,81,102,115,0,vomiting and diarrhea,low
+278,87,63,100,100,0,severe back pain,low
+279,48,58,156,84,1,chest pain and dizziness,medium
+280,61,58,168,99,1,fever and chills,medium
+281,30,108,177,119,0,chest pain and dizziness,medium
+282,24,97,179,77,0,chest pain and dizziness,medium
+283,79,97,166,87,0,vomiting and diarrhea,medium
+284,59,94,151,88,1,blurred vision,medium
+285,86,105,129,93,0,severe back pain,medium
+286,52,55,177,78,1,severe back pain,medium
+287,78,108,137,100,0,cough and sore throat,medium
+288,64,102,131,95,0,chest pain and dizziness,medium
+289,57,109,96,64,1,severe back pain,medium
+290,77,80,112,101,0,mild headache and fatigue,low
+291,72,79,128,90,0,cough and sore throat,low
+292,21,61,128,61,0,mild headache and fatigue,low
+293,65,76,106,99,0,vomiting and diarrhea,low
+294,79,113,177,104,0,mild headache and fatigue,medium
+295,89,79,160,69,0,shortness of breath,medium
+296,82,77,149,74,1,joint pain and swelling,medium
+297,41,117,109,91,0,mild headache and fatigue,medium
+298,87,113,106,71,0,vomiting and diarrhea,medium
+299,29,114,111,85,0,shortness of breath,medium
+300,69,63,153,106,1,vomiting and diarrhea,medium
+301,55,101,165,66,0,vomiting and diarrhea,medium
+302,52,55,168,91,0,chest pain and dizziness,medium
+303,77,75,135,93,1,vomiting and diarrhea,low
+304,32,88,104,114,0,mild headache and fatigue,low
+305,51,51,136,73,0,joint pain and swelling,low
+306,46,116,170,103,0,vomiting and diarrhea,medium
+307,40,96,169,96,0,vomiting and diarrhea,medium
+308,25,68,146,64,1,severe back pain,medium
+309,20,107,127,74,0,fever and chills,medium
+310,54,113,114,83,0,abdominal pain and nausea,medium
+311,34,76,161,119,0,shortness of breath,medium
+312,36,102,97,74,0,fever and chills,medium
+313,69,52,153,103,0,shortness of breath,medium
+314,79,52,109,105,0,abdominal pain and nausea,low
+315,36,58,127,107,0,joint pain and swelling,low
+316,82,51,177,67,0,cough and sore throat,medium
+317,40,67,153,77,0,abdominal pain and nausea,medium
+318,57,81,100,104,0,blurred vision,low
+319,60,57,100,81,0,fever and chills,low
+320,60,66,165,116,0,mild headache and fatigue,medium
+321,73,69,122,69,0,chest pain and dizziness,high
+322,21,82,166,89,0,blurred vision,medium
+323,45,71,155,97,0,vomiting and diarrhea,medium
+324,65,64,133,108,1,vomiting and diarrhea,low
+325,80,116,95,68,1,mild headache and fatigue,medium
+326,51,90,165,67,1,mild headache and fatigue,medium
+327,81,111,96,70,1,severe back pain,medium
+328,23,55,147,81,0,shortness of breath,medium
+329,22,90,149,101,0,severe back pain,medium
+330,31,61,102,84,1,abdominal pain and nausea,low
+331,38,104,134,67,1,cough and sore throat,medium
+332,72,104,121,110,0,fever and chills,medium
+333,89,67,172,81,0,mild headache and fatigue,medium
+334,75,108,92,87,0,shortness of breath,medium
+335,54,110,143,74,0,fever and chills,medium
+336,68,80,147,83,0,abdominal pain and nausea,medium
+337,23,69,149,83,0,cough and sore throat,medium
+338,70,85,155,74,1,blurred vision,medium
+339,25,88,131,110,0,severe back pain,low
+340,31,52,107,99,0,abdominal pain and nausea,low
+341,45,57,176,101,0,vomiting and diarrhea,medium
+342,21,86,158,97,0,severe back pain,medium
+343,81,109,103,115,0,chest pain and dizziness,high
+344,21,119,106,118,0,severe back pain,medium
+345,47,115,124,96,0,abdominal pain and nausea,medium
+346,84,89,165,115,0,mild headache and fatigue,medium
+347,42,96,120,70,1,cough and sore throat,low
+348,33,59,165,89,0,abdominal pain and nausea,medium
+349,24,69,97,102,1,mild headache and fatigue,low
+350,76,113,173,87,0,mild headache and fatigue,medium
+351,56,96,165,96,0,severe back pain,medium
+352,63,105,117,106,1,cough and sore throat,medium
+353,80,69,167,61,0,abdominal pain and nausea,medium
+354,56,69,115,88,0,abdominal pain and nausea,low
+355,54,119,148,64,0,vomiting and diarrhea,medium
+356,70,61,109,112,0,shortness of breath,low
+357,62,99,118,116,0,fever and chills,low
+358,75,92,139,82,0,shortness of breath,low
+359,42,94,141,75,1,abdominal pain and nausea,medium
+360,27,50,97,88,0,severe back pain,low
+361,24,96,123,60,0,blurred vision,low
+362,62,79,171,76,0,abdominal pain and nausea,medium
+363,66,95,157,92,0,chest pain and dizziness,high
+364,50,63,142,107,0,mild headache and fatigue,medium
+365,81,115,153,65,0,joint pain and swelling,medium
+366,52,90,178,107,0,abdominal pain and nausea,medium
+367,50,117,93,97,0,chest pain and dizziness,medium
+368,32,72,172,104,0,chest pain and dizziness,medium
+369,73,64,154,71,0,fever and chills,medium
+370,34,70,108,119,0,cough and sore throat,low
+371,52,98,124,103,0,abdominal pain and nausea,low
+372,30,115,135,68,0,cough and sore throat,medium
+373,45,97,155,65,1,blurred vision,medium
+374,45,74,101,64,0,severe back pain,low
+375,56,93,104,102,0,joint pain and swelling,low
+376,89,95,132,104,0,severe back pain,low
+377,66,64,114,95,1,chest pain and dizziness,high
+378,34,117,110,72,0,mild headache and fatigue,medium
+379,53,117,141,105,0,mild headache and fatigue,medium
+380,47,84,97,75,0,cough and sore throat,low
+381,49,67,91,108,1,severe back pain,low
+382,26,88,102,90,0,chest pain and dizziness,low
+383,75,91,150,101,1,fever and chills,medium
+384,87,56,143,60,0,vomiting and diarrhea,medium
+385,64,96,102,114,0,severe back pain,low
+386,40,58,115,68,0,cough and sore throat,low
+387,61,73,169,108,0,joint pain and swelling,medium
+388,56,117,139,83,0,cough and sore throat,medium
+389,79,88,163,84,0,chest pain and dizziness,high
+390,55,104,158,106,0,abdominal pain and nausea,medium
+391,52,70,170,81,0,fever and chills,medium
+392,34,84,160,91,0,chest pain and dizziness,medium
+393,76,74,91,94,0,fever and chills,low
+394,37,116,131,113,0,shortness of breath,medium
+395,60,73,149,105,0,shortness of breath,medium
+396,61,81,128,104,0,mild headache and fatigue,low
+397,55,52,162,67,0,fever and chills,medium
+398,89,90,157,72,0,severe back pain,medium
+399,21,109,94,103,0,joint pain and swelling,medium
+400,40,57,161,109,0,vomiting and diarrhea,medium
+401,63,107,92,81,0,cough and sore throat,medium
+402,63,51,170,94,0,shortness of breath,medium
+403,49,57,111,103,0,cough and sore throat,low
+404,88,80,136,116,0,cough and sore throat,low
+405,81,79,144,75,0,joint pain and swelling,medium
+406,35,61,97,79,0,chest pain and dizziness,low
+407,49,72,94,79,1,cough and sore throat,low
+408,84,79,110,79,0,fever and chills,low
+409,51,82,105,71,0,joint pain and swelling,low
+410,33,85,112,109,0,shortness of breath,low
+411,21,114,164,62,0,abdominal pain and nausea,medium
+412,42,75,157,77,0,cough and sore throat,medium
+413,54,71,132,74,1,mild headache and fatigue,low
+414,31,98,131,97,0,joint pain and swelling,low
+415,54,79,177,101,1,chest pain and dizziness,medium
+416,25,116,169,66,0,blurred vision,medium
+417,34,70,124,61,0,shortness of breath,low
+418,54,69,171,69,0,shortness of breath,medium
+419,44,103,122,95,0,blurred vision,medium
+420,84,103,141,62,1,fever and chills,medium
+421,25,74,102,112,0,abdominal pain and nausea,low
+422,40,117,114,74,1,shortness of breath,medium
+423,79,61,121,91,0,shortness of breath,low
+424,50,69,107,88,0,chest pain and dizziness,low
+425,25,81,132,61,0,shortness of breath,low
+426,50,54,172,93,0,joint pain and swelling,medium
+427,21,60,139,90,0,fever and chills,low
+428,28,70,162,87,0,abdominal pain and nausea,medium
+429,26,65,93,63,1,mild headache and fatigue,low
+430,36,101,141,95,0,abdominal pain and nausea,medium
+431,69,112,152,94,0,fever and chills,medium
+432,33,54,144,61,0,severe back pain,medium
+433,40,70,99,82,0,joint pain and swelling,low
+434,58,54,154,72,0,severe back pain,medium
+435,72,94,121,95,0,fever and chills,low
+436,79,60,152,80,0,chest pain and dizziness,high
+437,74,75,157,93,0,mild headache and fatigue,medium
+438,71,78,127,101,0,abdominal pain and nausea,low
+439,32,113,106,115,0,cough and sore throat,medium
+440,20,51,149,107,0,vomiting and diarrhea,medium
+441,29,107,149,99,0,abdominal pain and nausea,medium
+442,53,57,148,81,0,chest pain and dizziness,medium
+443,36,109,176,83,1,mild headache and fatigue,medium
+444,88,81,133,60,0,vomiting and diarrhea,low
+445,27,92,90,104,0,joint pain and swelling,low
+446,43,66,94,79,0,fever and chills,low
+447,77,80,100,111,0,fever and chills,low
+448,26,77,140,102,0,joint pain and swelling,low
+449,24,57,153,69,0,vomiting and diarrhea,medium
+450,27,74,162,61,0,severe back pain,medium
+451,86,98,125,63,0,mild headache and fatigue,low
+452,60,111,99,80,0,joint pain and swelling,medium
+453,21,62,142,91,0,vomiting and diarrhea,medium
+454,51,81,100,69,0,shortness of breath,low
+455,59,67,144,68,0,abdominal pain and nausea,medium
+456,78,71,119,79,0,chest pain and dizziness,high
+457,51,100,135,108,0,joint pain and swelling,low
+458,51,88,101,100,0,chest pain and dizziness,low
+459,40,62,110,67,0,severe back pain,low
+460,26,72,164,81,0,severe back pain,medium
+461,41,78,102,77,0,shortness of breath,low
+462,71,76,139,90,0,fever and chills,low
+463,42,93,166,81,0,joint pain and swelling,medium
+464,80,105,92,113,0,mild headache and fatigue,medium
+465,48,79,128,103,0,fever and chills,low
+466,27,107,105,67,0,vomiting and diarrhea,medium
+467,24,52,154,63,0,fever and chills,medium
+468,83,59,110,105,0,mild headache and fatigue,low
+469,46,115,130,107,0,abdominal pain and nausea,medium
+470,55,107,143,71,0,severe back pain,medium
+471,33,83,142,116,0,abdominal pain and nausea,medium
+472,35,119,145,78,1,joint pain and swelling,medium
+473,23,53,109,69,1,fever and chills,low
+474,45,86,174,113,0,joint pain and swelling,medium
+475,40,87,135,63,0,abdominal pain and nausea,low
+476,64,69,106,114,1,severe back pain,low
+477,33,52,177,96,0,cough and sore throat,medium
+478,74,53,113,93,0,shortness of breath,low
+479,38,80,149,119,0,joint pain and swelling,medium
+480,82,71,113,104,0,joint pain and swelling,low
+481,77,80,153,78,0,cough and sore throat,medium
+482,74,104,107,111,0,vomiting and diarrhea,medium
+483,66,106,134,92,0,vomiting and diarrhea,medium
+484,23,69,136,86,0,abdominal pain and nausea,low
+485,66,58,179,75,0,joint pain and swelling,medium
+486,80,59,139,62,0,severe back pain,low
+487,89,100,108,101,1,chest pain and dizziness,high
+488,45,118,153,96,0,abdominal pain and nausea,medium
+489,40,113,94,95,0,abdominal pain and nausea,medium
+490,23,88,124,60,0,shortness of breath,low
+491,89,90,143,105,0,joint pain and swelling,medium
+492,79,106,120,79,0,vomiting and diarrhea,medium
+493,55,79,113,103,0,vomiting and diarrhea,low
+494,26,84,144,87,0,fever and chills,medium
+495,29,65,143,90,0,blurred vision,medium
+496,89,93,162,104,1,blurred vision,medium
+497,76,70,157,109,0,blurred vision,medium
+498,26,119,104,77,0,shortness of breath,medium
+499,39,64,137,66,0,severe back pain,low
+500,45,63,146,96,1,blurred vision,medium
