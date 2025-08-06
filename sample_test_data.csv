@@ -1,0 +1,6 @@
+patient_id,age,heart_rate,systolic_bp,diastolic_bp,history_diabetes,symptom_text
+P001,45,100,140,90,1,"severe chest pain and shortness of breath"
+P002,32,85,120,80,0,"mild headache and nausea"
+P003,67,110,160,95,1,"difficulty breathing during exertion"
+P004,28,75,115,75,0,"minor cut requiring bandage"
+P005,55,95,150,88,1,"persistent vomiting and dehydration"
