@@ -8,6 +8,8 @@ import joblib
 import os
 import json
 import logging
+import subprocess
+import sys
 from datetime import datetime
 
 # Set up logging
@@ -21,6 +23,106 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+def auto_setup():
+    """Automatically setup the entire pipeline if needed"""
+    setup_status = {"data_generated": False, "model_trained": False}
+    
+    # Check if synthetic data exists
+    data_path = "data/synthetic_data.csv"
+    if not os.path.exists(data_path):
+        st.info("🔄 Generating synthetic training data...")
+        progress_bar = st.progress(0, text="Generating realistic patient data...")
+        
+        try:
+            # Generate synthetic data
+            import synthetic_data
+            df = synthetic_data.generate_synthetic_data(500)
+            os.makedirs("data", exist_ok=True)
+            df.to_csv(data_path, index=False)
+            setup_status["data_generated"] = True
+            progress_bar.progress(50, text="✅ Synthetic data generated successfully!")
+            logger.info("Synthetic data generated successfully")
+        except Exception as e:
+            st.error(f"❌ Failed to generate synthetic data: {str(e)}")
+            return setup_status
+    
+    # Check if model exists
+    model_path = "model/healthcare_model.pt"
+    processor_path = "model/data_processor.pkl"
+    
+    if not os.path.exists(model_path) or not os.path.exists(processor_path):
+        st.info("🤖 Training AI model (this may take a few minutes)...")
+        progress_bar = st.progress(50, text="Training healthcare urgency prediction model...")
+        
+        try:
+            # Import and run training
+            from src.train import main as train_main
+            
+            # Create a custom training function that doesn't call main()
+            from src.train import (HealthcareDataset, DataPreprocessor, HealthcareUrgencyModel, 
+                                 train, evaluate, torch, DataLoader, random_split, F)
+            
+            # Load data
+            df = pd.read_csv(data_path)
+            
+            # Preprocess
+            processor = DataPreprocessor()
+            df, tokenized = processor.fit_transform(df)
+            
+            # Dataset & Split
+            dataset = HealthcareDataset(df, tokenized)
+            train_size = int(0.8 * len(dataset))
+            val_size = len(dataset) - train_size
+            train_dataset, val_dataset = random_split(dataset, [train_size, val_size])
+            
+            train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+            val_loader = DataLoader(val_dataset, batch_size=32)
+            
+            # Model setup
+            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            model = HealthcareUrgencyModel()
+            model.to(device)
+            
+            optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
+            
+            # Training loop with progress updates
+            epochs = 5
+            for epoch in range(epochs):
+                loss = train(model, train_loader, optimizer, device)
+                progress = 50 + (epoch + 1) * 10  # 50-100%
+                progress_bar.progress(progress, text=f"Training epoch {epoch+1}/{epochs} (Loss: {loss:.4f})")
+            
+            # Save model & processor
+            os.makedirs("model", exist_ok=True)
+            torch.save(model.state_dict(), model_path)
+            joblib.dump(processor, processor_path)
+            
+            # Save metadata
+            metadata = {
+                "training_date": datetime.now().isoformat(),
+                "model_architecture": "HealthcareUrgencyModel",
+                "tokenizer": "distilbert-base-uncased",
+                "epochs": epochs,
+                "train_samples": train_size,
+                "val_samples": val_size,
+                "device": str(device),
+                "classes": processor.label_encoder.classes_.tolist()
+            }
+            
+            with open("model/training_metadata.json", "w") as f:
+                json.dump(metadata, f, indent=2)
+            
+            setup_status["model_trained"] = True
+            progress_bar.progress(100, text="✅ Model training completed successfully!")
+            logger.info("Model training completed successfully")
+            
+        except Exception as e:
+            st.error(f"❌ Failed to train model: {str(e)}")
+            logger.error(f"Training failed: {str(e)}")
+            return setup_status
+    
+    return setup_status
 
 def check_model_files():
     """Check if required model files exist"""
@@ -48,13 +150,21 @@ def load_training_metadata():
 
 @st.cache_resource
 def load_model_and_processor():
-    """Load model and processor with error handling"""
+    """Load model and processor with automatic setup if needed"""
     try:
         missing_files = check_model_files()
         if missing_files:
-            st.error(f"Missing required files: {missing_files}")
-            st.error("Please run the training script first: `python -m src.train`")
-            st.stop()
+            # Automatically setup the pipeline
+            st.warning("🔧 Setting up Healthcare Queue Optimizer for first-time use...")
+            setup_status = auto_setup()
+            
+            # Clear cache and try again
+            if setup_status.get("model_trained", False) or setup_status.get("data_generated", False):
+                st.cache_resource.clear()
+                st.rerun()
+            else:
+                st.error("❌ Failed to setup the system automatically. Please check the logs above.")
+                st.stop()
         
         model = HealthcareUrgencyModel()
         model.load_state_dict(torch.load("model/healthcare_model.pt", map_location="cpu"))
@@ -147,6 +257,12 @@ def urgency_color(val):
     return colors.get(val, "")
 
 def main():
+    # Startup check and auto-setup
+    if not os.path.exists("data/synthetic_data.csv") or not os.path.exists("model/healthcare_model.pt"):
+        st.info("🚀 **First-time setup detected!** Setting up your Healthcare Queue Optimizer...")
+        with st.spinner("This may take a few minutes for the initial setup..."):
+            auto_setup()
+    
     # Header and description
     st.title("🏥 Healthcare Emergency Queue Optimizer")
     st.markdown("""

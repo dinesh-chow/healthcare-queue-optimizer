@@ -54,6 +54,31 @@ healthcare-queue-optimizer/
 
 ## 🛠️ Setup Instructions
 
+### 🚀 **Option 1: One-Click Setup (Recommended)**
+
+**For Windows users:**
+```bash
+start.bat
+```
+
+**For Linux/Mac users:**
+```bash
+./start.sh
+```
+
+**For Python users:**
+```bash
+python run.py
+```
+
+This will automatically:
+- ✅ Install all dependencies
+- ✅ Generate training data (if needed)
+- ✅ Train the AI model (if needed)
+- ✅ Launch the web application
+
+### ⚙️ **Option 2: Manual Setup**
+
 ### ✅ 1. Clone the Project
 ```bash
 git clone https://github.com/your-username/healthcare-queue-optimizer.git
